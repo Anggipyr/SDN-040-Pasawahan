@@ -1,0 +1,112 @@
+/* Styling untuk halaman Pendaftaran Siswa Baru */
+#form-pendaftaran {
+    padding: 40px 0;
+}
+
+#form-pendaftaran h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#form-pendaftaran form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#form-pendaftaran .form-group {
+    margin-bottom: 20px;
+}
+
+#form-pendaftaran label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#form-pendaftaran input[type="text"],
+#form-pendaftaran input[type="date"],
+#form-pendaftaran input[type="tel"],
+#form-pendaftaran select,
+#form-pendaftaran textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#form-pendaftaran textarea {
+    resize: vertical;
+}
+
+#form-pendaftaran select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    padding-right: 25px;
+}
+
+#form-pendaftaran .button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+#form-pendaftaran .primary-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#form-pendaftaran .primary-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #form-pendaftaran h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    #form-pendaftaran form {
+        padding: 20px;
+    }
+
+    #form-pendaftaran .form-group {
+        margin-bottom: 15px;
+    }
+
+    #form-pendaftaran label {
+        font-size: 0.95em;
+    }
+
+    #form-pendaftaran input[type="text"],
+    #form-pendaftaran input[type="date"],
+    #form-pendaftaran input[type="tel"],
+    #form-pendaftaran select,
+    #form-pendaftaran textarea {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    #form-pendaftaran .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

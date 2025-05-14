@@ -1,0 +1,95 @@
+/* Styling untuk halaman Daftar Berita (tanpa tombol) */
+#daftar-berita {
+    padding: 40px 0;
+}
+
+#daftar-berita h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#daftar-berita .berita-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+#daftar-berita .berita-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#daftar-berita .berita-item h3 {
+    font-size: 1.7em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#daftar-berita .berita-item .tanggal-berita {
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+#daftar-berita .berita-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#daftar-berita .berita-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#daftar-berita .berita-item p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#daftar-berita .berita-item p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #daftar-berita h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    #daftar-berita .berita-list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #daftar-berita .berita-item {
+        padding: 15px;
+    }
+
+    #daftar-berita .berita-item h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    #daftar-berita .berita-item .tanggal-berita {
+        margin-bottom: 10px;
+    }
+
+    #daftar-berita .berita-item p {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+    }
+}

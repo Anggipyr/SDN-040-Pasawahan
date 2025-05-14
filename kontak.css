@@ -1,0 +1,152 @@
+/* Styling untuk Halaman Kontak */
+#kontak-halaman {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Latar belakang abu-abu muda */
+}
+
+#kontak-halaman h2 {
+    font-size: 3em;
+    color: #343a40; /* Warna teks gelap */
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#kontak-halaman h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; /* Aksen warna biru */
+    border-radius: 2px;
+}
+
+.kontak-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informasi-kontak h3,
+.formulir-kontak h3 {
+    font-size: 1.8em;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.informasi-kontak p {
+    display: flex;
+    align-items: center;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.informasi-kontak i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1.2em;
+    width: 20px;
+    text-align: center;
+}
+
+.formulir-kontak .form-group {
+    margin-bottom: 20px;
+}
+
+.formulir-kontak label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.formulir-kontak input[type="text"],
+.formulir-kontak input[type="email"],
+.formulir-kontak textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formulir-kontak textarea {
+    resize: vertical;
+}
+
+.formulir-kontak .button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745; /* Warna tombol hijau */
+    color: #fff;
+}
+
+.formulir-kontak .button:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #kontak-halaman {
+        padding: 40px 0;
+    }
+
+    #kontak-halaman h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .kontak-wrapper {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .informasi-kontak h3,
+    .formulir-kontak h3 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .informasi-kontak p {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+
+    .formulir-kontak .form-group {
+        margin-bottom: 15px;
+    }
+
+    .formulir-kontak label {
+        font-size: 0.95em;
+    }
+
+    .formulir-kontak input[type="text"],
+    .formulir-kontak input[type="email"],
+    .formulir-kontak textarea {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    .formulir-kontak .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

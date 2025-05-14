@@ -1,0 +1,414 @@
+/* Reset Dasar */
+body, h1, h2, h3, p, ul, li, a, img, button, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Abu-abu muda lembut */
+    color: #343a40; /* Abu-abu gelap */
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #dee2e6; /* Garis bawah header tipis */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+    color: #212529; /* Hitam lembut */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #495057; /* Abu-abu sedang */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Biru utama saat hover */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: #212529;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e9ecef; /* Abu-abu sangat muda */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #212529;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    color: #495057;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+.hero-content .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* Biru utama */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content .button:hover {
+    background-color: #0056b3; /* Biru lebih gelap saat hover */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content + .hero-image {
+    margin-top: 30px;
+}
+
+/* Profil Singkat */
+#profil-singkat {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#profil-singkat h2 {
+    color: #212529;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 2px solid #ced4da; /* Garis bawah tipis */
+    padding-bottom: 10px;
+}
+
+#profil-singkat p {
+    color: #495057;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.info-sekolah {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 35px;
+    color: #6c757d;
+    font-size: 1em;
+}
+
+.info-sekolah div {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; /* Abu-abu sangat muda */
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.info-sekolah i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+#profil-singkat .secondary-button {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 12px 20px;
+    background-color: #6c757d; /* Abu-abu sedang */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+#profil-singkat .secondary-button:hover {
+    background-color: #545b62; /* Abu-abu lebih gelap saat hover */
+}
+
+/* Berita Terkini */
+#berita-terkini {
+    background-color: #f8f9fa; /* Abu-abu sangat muda */
+    padding: 60px 0;
+}
+
+#berita-terkini h2 {
+    color: #212529;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 2px solid #ced4da; /* Garis bawah tipis */
+    padding-bottom: 10px;
+}
+
+.berita-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.berita-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ced4da; /* Border tipis */
+}
+
+.berita-item h3 {
+    color: #212529;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tanggal-berita {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.berita-item p {
+    color: #495057;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.link-button {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 1em;
+}
+
+.link-button:hover {
+    color: #0056b3;
+}
+
+.lihat-semua {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Galeri Mini */
+#galeri-mini {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#galeri-mini h2 {
+    color: #212529;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 2px solid #ced4da; /* Garis bawah tipis */
+    padding-bottom: 10px;
+}
+
+.galeri-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeri-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #ced4da; /* Border tipis */
+}
+
+.galeri-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Tombol Outline */
+.button.outline-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em;
+}
+
+.button.outline-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 2px solid #6c757d; /* Garis atas footer tipis */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        width: 100%;
+        display: none;
+        margin-top: 15px;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2em;
+    }
+
+    #hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .info-sekolah {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .berita-list {
+        grid-template-columns: 1fr;
+    }
+
+    .galeri-images {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}

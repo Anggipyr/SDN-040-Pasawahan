@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Baru - SDN 040 Pasawahan</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pendaftaran.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="Logo Sdn 040.png" alt="Logo SDN 040 Pasawahan"></a>
+                <h1><a href="index.html">SDN 040 Pasawahan</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil Sekolah</a></li>
+                    <li><a href="ekstrakurikuler.html">Kegiatan Ekstrakurikuler</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="form-pendaftaran">
+            <h2>Formulir Pendaftaran Siswa Baru Tahun Ajaran 2025/2026</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nama_lengkap">Nama Lengkap:</label>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jenis_kelamin">Jenis Kelamin:</label>
+                    <select id="jenis_kelamin" name="jenis_kelamin" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tempat_lahir">Tempat Lahir:</label>
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="lain-lain">Lain-lain</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap:</label>
+                    <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama_ayah">Nama Ayah:</label>
+                    <input type="text" id="nama_ayah" name="nama_ayah" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama_ibu">Nama Ibu:</label>
+                    <input type="text" id="nama_ibu" name="nama_ibu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kontak_wali">Nomor Telepon/HP Wali:</label>
+                    <input type="tel" id="kontak_wali" name="kontak_wali" required>
+                </div>
+
+                <button type="submit" class="button primary-button">Daftar Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>SDN 040 Pasawahan - Jl. Mochamad Toha No. 383, Bandung - 0225224809</p>
+            <p>&copy; 2025 SDN 040 Pasawahan. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

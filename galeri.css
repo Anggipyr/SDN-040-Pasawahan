@@ -1,0 +1,93 @@
+/* Styling untuk Halaman Galeri */
+#galeri-halaman {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Latar belakang abu-abu muda */
+}
+
+#galeri-halaman h2 {
+    font-size: 3em;
+    color: #343a40; /* Warna teks gelap */
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#galeri-halaman h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; /* Aksen warna biru */
+    border-radius: 2px;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsif */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeri-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeri-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.galeri-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.galeri-item img:hover {
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #galeri-halaman {
+        padding: 40px 0;
+    }
+
+    #galeri-halaman h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    #galeri-halaman h2::after {
+        width: 80px;
+        height: 3px;
+    }
+
+    .galeri-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    #galeri-halaman h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .galeri-grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar sangat kecil */
+        gap: 10px;
+    }
+}

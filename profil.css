@@ -1,0 +1,301 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+}
+
+/* Main Content */
+main {
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h1, section h2 {
+    color: #212529;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Profil Sekolah Section */
+#profil-sekolah {
+    background-color: #fff;
+}
+
+.profil-details {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profil-image {
+    flex: 0 0 300px;
+}
+
+.profil-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profil-info h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.profil-info p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.profil-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #495057;
+}
+
+.profil-info ul li {
+    margin-bottom: 5px;
+}
+
+/* Data Sekolah Section */
+#data-sekolah {
+    background-color: #f8f9fa;
+}
+
+.data-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.data-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-item i {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.data-item p {
+    margin: 0;
+    color: #495057;
+}
+
+.data-item strong {
+    font-weight: bold;
+    color: #212529;
+}
+
+/* Fasilitas Sekolah Section */
+#fasilitas-sekolah {
+    background-color: #fff;
+}
+
+.fasilitas-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.fasilitas-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fasilitas-item i {
+    font-size: 2em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.fasilitas-item p {
+    margin: 0;
+    color: #495057;
+}
+
+/* Kontak Singkat Section */
+#kontak-singkat {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.kontak-info {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.kontak-info p {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.kontak-info i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        display: none; /* Hide nav on smaller screens initially */
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on smaller screens */
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .profil-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profil-image {
+        margin-bottom: 20px;
+    }
+}
